@@ -36,3 +36,25 @@ alert(messageStr + userEnter1 + dashStr + userEnter2 + dashStr + userEnter3);
 function userEnterSecretCode() {
   alert(messageStr + secretCombo1.value + dashStr + secretCombo2.value + dashStr + secretCombo3.value);
 }
+
+// The below is the function I've written for the user to guess the entry code. If they guess correctly (10 - 40 - 30),
+// then a dialog box pop-up will tell them they are correct; otherwise a dialog box pop-up will tell them they are incorrect.
+
+function userGuessSecretCode() {
+  if(secretCombo1Guess.value == 10) {
+    if(secretCombo2Guess.value == 40) {
+      if(secretCombo3Guess.value == 39) {
+        alert("You have guessed correctly!")
+      }
+      else{
+        alert("You have guessed incorrectly...")
+      }
+    }
+    else{
+      alert("You have guessed incorrectly...")
+    }
+  }
+  else{
+    alert("You have guessed incorrectly...")
+  }
+};

@@ -7,19 +7,46 @@
   </head>
   <body>
     <h1>Block 07, Secure the Vault Workshop</h1>
-      <!-- The below form is used alongside the "userEnterSecretCode()" function -->
-      <!-- in order for the user to enter the secret code themselves with input boxes. -->
+    <br />
+
+    <!-- The below form is used alongside the "userEnterSecretCode()" function -->
+    <!-- in order for the user to enter the secret code themselves with input boxes. -->
+    <section>
+      <h3>You can also enter a secret code yourself!</h3>
       <form>
         <label for="secretCombo1">Secret Number Combo 1:</label>
         <input type="number" id="secretCombo1" name="secretCombo1">
-
         <label for="secretCombo1">Secret Number Combo 2:</label>
         <input type="number" id="secretCombo2" name="secretCombo2">
-
         <label for="secretCombo1">Secret Number Combo 3:</label>
         <input type="number" id="secretCombo3" name="secretCombo3">
-
-        <input type="submit" id="submit" value="submit" onclick="userEnterSecretCode();">
+        <input type="submit" id="submit" value="Submit" onclick="userEnterSecretCode();">
       </form>
+    </section>
+    <br />
+
+    <section>
+      <h3>You can also enter the secret code yourself using dialog boxes!</h3>
+      <h4>Just press the button below.</h4>
+    </section>
+    <br />
+
+    <!-- The below section and associated form is used alongside the "userGuessSecretCode()" function -->
+    <!-- in order for the user to guess the secret code themselves with input boxes. -->
+    <section>
+      <h3>Would you like to try to guess the secret vault combination?</h3>
+      <form>
+        <label for="secretCombo1Guess">Guess Secret Number Combo 1:</label>
+        <input type="number" id="secretCombo1Guess" name="secretCombo1Guess">
+  
+        <label for="secretCombo1Guess">Guess Secret Number Combo 2:</label>
+        <input type="number" id="secretCombo2Guess" name="secretCombo2Guess">
+  
+        <label for="secretCombo1Guess">Guess Secret Number Combo 3:</label>
+        <input type="number" id="secretCombo3Guess" name="secretCombo3Guess">
+  
+        <input type="submit" id="submitGuess" value="Submit Guess" onclick="userGuessSecretCode();">
+      </form>
+    </section>
   </body>
 </html>
