@@ -7,5 +7,19 @@
   </head>
   <body>
     <h1>Block 07, Secure the Vault Workshop</h1>
+      <!-- The below form is used alongside the "userEnterSecretCode()" function -->
+      <!-- in order for the user to enter the secret code themselves with input boxes. -->
+      <form>
+        <label for="secretCombo1">Secret Number Combo 1:</label>
+        <input type="number" id="secretCombo1" name="secretCombo1">
+
+        <label for="secretCombo1">Secret Number Combo 2:</label>
+        <input type="number" id="secretCombo2" name="secretCombo2">
+
+        <label for="secretCombo1">Secret Number Combo 3:</label>
+        <input type="number" id="secretCombo3" name="secretCombo3">
+
+        <input type="submit" id="submit" value="submit" onclick="userEnterSecretCode();">
+      </form>
   </body>
 </html>
