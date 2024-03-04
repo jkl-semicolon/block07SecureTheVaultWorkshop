@@ -21,12 +21,12 @@ alert(messageStr + combo1 + dashStr + combo2 + dashStr + combo3);
 // that is embedded in a submit input in the .html file.
 
 function userInputPromptsSecretCode() {
-  const userEnter1 = prompt("Please enter the first combination number: ")
-  const userEnter2 = prompt("Please enter the second combination number: ")
-  const userEnter3 = prompt("Please enter the third combination number: ")
+  const userEnter1 = prompt("Please enter the first combination number: ");
+  const userEnter2 = prompt("Please enter the second combination number: ");
+  const userEnter3 = prompt("Please enter the third combination number: ");
 
-alert(messageStr + userEnter1 + dashStr + userEnter2 + dashStr + userEnter3);
-};
+  alert(messageStr + userEnter1 + dashStr + userEnter2 + dashStr + userEnter3);
+}
 
 // Second bonus method below for the user to enter the secret combination.
 // This is a better method than using the prompt method above, as the prompt method will 
@@ -43,17 +43,17 @@ function userGuessSecretCode() {
   if(secretCombo1Guess.value == 10) {
     if(secretCombo2Guess.value == 40) {
       if(secretCombo3Guess.value == 39) {
-        alert("You have guessed correctly!")
+        alert("You have guessed correctly!");
       }
       else{
-        alert("You have guessed incorrectly...")
+        alert("You have guessed incorrectly...");
       }
     }
     else{
-      alert("You have guessed incorrectly...")
+      alert("You have guessed incorrectly...");
     }
   }
   else{
-    alert("You have guessed incorrectly...")
+    alert("You have guessed incorrectly...");
   }
-};
+}
