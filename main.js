@@ -18,16 +18,16 @@ const dashStr = " - ";
 alert(messageStr + combo1 + dashStr + combo2 + dashStr + combo3);
 
 // Bonus method for the user to enter the secret combination is below.
-// The below is commented out in a block, as to not clog up the webpage
-// with lots of dialog box pop-ups.
+// This method uses prompt methods along with an alert method in a function
+// that is embedded in a submit input in the .html file.
 
-/* 
-const userEnter1 = prompt("Please enter the first combination number: ");
-const userEnter2 = prompt("Please enter the second combination number: ");
-const userEnter3 = prompt("Please enter the third combination number: ");
+function userInputPromptsSecretCode() {
+  const userEnter1 = prompt("Please enter the first combination number: ")
+  const userEnter2 = prompt("Please enter the second combination number: ")
+  const userEnter3 = prompt("Please enter the third combination number: ")
 
-alert(messageStr + userEnter1 + dashStr + userEnter2 + dashStr + userEnter3); 
-*/
+alert(messageStr + userEnter1 + dashStr + userEnter2 + dashStr + userEnter3);
+};
 
 // Second bonus method below for the user to enter the secret combination.
 // This is a better method than using the prompt method above, as the prompt method will 
